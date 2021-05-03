@@ -1,0 +1,24 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.half-txt {
+    display: inline-block;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 25px;
+    @include respond(phone) {
+        width: 80%;
+    }
+}
+.u-center-text {
+    text-align: center;
+}
+.u-margin-buttom-30 {
+    margin-bottom: 3rem;
+}
+.u-padding-top-30 {
+    padding-top: 3rem;
+}
