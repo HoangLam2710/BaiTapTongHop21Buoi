@@ -1,6 +1,8 @@
-@import "./base/reset";
 @import "./helper/variable";
 @import "./helper/mixin";
+@import "./base/reset";
+@import "./pages/home.scss";
+@import "./base/typography";
 @import "./components/header";
 @import "./components/carousel";
 @import "./components/about";

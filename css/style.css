@@ -1,18 +1,27 @@
-* {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-body {
-  font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
   line-height: 1.5;
 }
@@ -21,7 +30,7 @@ h1 {
   font-size: 36px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
   h1 {
     font-size: 26px;
   }
@@ -31,7 +40,7 @@ h2 {
   font-size: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
   h2 {
     font-size: 22px;
   }
@@ -41,7 +50,7 @@ h3 {
   font-size: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
   h3 {
     font-size: 18px;
   }
@@ -51,7 +60,7 @@ h4 {
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 900px) {
   h4 {
     font-size: 16px;
   }
@@ -70,3 +79,41 @@ p {
   font-weight: 400;
   color: #7e7e7e;
 }
+
+.page-content {
+  display: inline-block;
+  width: 100%;
+  padding: 100px 0;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.half-txt {
+  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+@media (max-width: 600px) {
+  .half-txt {
+    width: 80%;
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-buttom-30 {
+  margin-bottom: 3rem;
+}
+
+.u-padding-top-30 {
+  padding-top: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

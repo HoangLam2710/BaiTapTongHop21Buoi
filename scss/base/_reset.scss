@@ -1,45 +1,51 @@
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 15px;
+}
+body {
     box-sizing: border-box;
 }
 
-body {
-    font-size: 15px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
-    font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #333;
     line-height: 1.5;
 }
 
 h1 {
     font-size: 36px;
-    @media screen and (max-width: 768px) {
+    @include respond(tab-port) {
         font-size: 26px;
     }
 }
 
 h2 {
     font-size: 30px;
-    @media screen and (max-width: 768px) {
+    @include respond(tab-port) {
         font-size: 22px;
     }
 }
 
 h3 {
     font-size: 24px;
-    @media screen and (max-width: 768px) {
+    @include respond(tab-port) {
         font-size: 18px;
     }
 }
 
 h4 {
     font-size: 18px;
-    @media screen and (max-width: 768px) {
+    @include respond(tab-port) {
         font-size: 16px;
     }
 }
