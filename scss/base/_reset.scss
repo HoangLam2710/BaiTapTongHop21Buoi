@@ -5,10 +5,16 @@
     padding: 0;
     box-sizing: inherit;
 }
+::selection {
+    color: #fff;
+    background: #d6b161;
+    text-shadow: none;
+}
 html {
     font-size: 15px;
 }
 body {
+    font-family: "Source Sans Pro", sans-serif;
     box-sizing: border-box;
 }
 
@@ -20,6 +26,8 @@ h5,
 h6 {
     color: #333;
     line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -62,4 +70,6 @@ p {
     font-family: inherit;
     font-weight: 400;
     color: #7e7e7e;
+    font-size: 15px;
+    line-height: 30px;
 }
