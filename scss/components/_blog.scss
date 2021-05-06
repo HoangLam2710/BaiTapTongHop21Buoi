@@ -1,0 +1,108 @@
+.blog-content {
+    &__img {
+        img {
+            width: 100%;
+            position: relative;
+        }
+        &--button {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                display: block;
+                width: 15px;
+                height: 15px;
+                bottom: -7px;
+                margin-left: -16px;
+                transform: rotate(45deg);
+                border-style: none;
+                border-color: $color-white;
+                border-right: 1px solid $color-white;
+                border-image: none;
+                background-color: $color-white;
+            }
+        }
+        &--top {
+            &::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                display: block;
+                width: 15px;
+                height: 15px;
+                top: -7px;
+                margin-left: -16px;
+                transform: rotate(45deg);
+                border-style: none;
+                border-color: $color-white;
+                border-right: 1px solid $color-white;
+                border-image: none;
+                background-color: $color-white;
+            }
+        }
+    }
+}
+.content-box {
+    position: relative;
+    padding: 40px;
+    height: 301px;
+    &__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include respond(phone) {
+            padding-right: 40px;
+        }
+        &--date {
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+                height: 1px;
+                width: 60px;
+                background-color: $color-secondary;
+                margin-bottom: 20px;
+            }
+        }
+        &--title {
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+                transition: all 0.5s;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        &--name {
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: $colo-gray-3;
+                    transition: all 0.5s;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.blog-content {
+    .col-md-4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.blog-content {
+    @include respond(phone) {
+        .order {
+            order: 2;
+        }
+    }
+}

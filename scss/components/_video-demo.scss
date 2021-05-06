@@ -1,0 +1,9 @@
+.video-demo {
+    &__media {
+        iframe {
+            @include respond(phone) {
+                width: 100%;
+            }
+        }
+    }
+}
