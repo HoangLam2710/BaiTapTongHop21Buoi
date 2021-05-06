@@ -27,4 +27,14 @@ window.onscroll = function (event) {
   else {
       navBarFixed.classList.remove('isScrolling');
   }
+
+  let backToTop = document.querySelector('.back-to-top');
+  if(window.scrollY > 300) {
+    backToTop.classList.add('isVisible');
+  }
+  else {
+    backToTop.classList.remove('isVisible');
+  }
+
+  document.querySelector('home').scrollIntoView({ behavior: 'smooth' });
 }
