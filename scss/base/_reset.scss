@@ -5,15 +5,18 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 ::selection {
     color: #fff;
     background: #d6b161;
     text-shadow: none;
 }
+
 html {
     font-size: 15px;
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Source Sans Pro", sans-serif;
     box-sizing: border-box;
@@ -77,4 +80,15 @@ p {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    transition: all 0.5s;
+    &:hover {
+        text-decoration: none;
+    }
 }

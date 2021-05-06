@@ -1,0 +1,33 @@
+.paralax-inner {
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.paralax-15 {
+    background-image: url('./../../images/background/bg-5.jpeg') !important;
+}
+
+#contact__info {
+    .info__item {
+        .icon {
+            padding: 0 0 2rem 0;
+            i {
+                font-size: 40px;
+            }
+        }
+        .title {
+            h4 {
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+        }
+        .desc {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}

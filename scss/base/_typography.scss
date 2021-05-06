@@ -44,3 +44,31 @@
 .u-padding-bottom-5 {
   padding-bottom: 5rem;
 }
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.page-content {
+    display: inline-block;
+    width: 100%;
+    padding: calc(100rem / 15) 0;
+}
+
+.bg-grey {
+    background-color: #f8f8f8;
+}
+
+.heading-title {
+    margin-bottom: calc(100rem / 15);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+}
