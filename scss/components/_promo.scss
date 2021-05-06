@@ -1,0 +1,32 @@
+#promo {
+    background-color: $color-secondary;
+    @include respond(phone) { 
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .promo__info {
+        text-transform: uppercase;
+        h3 {
+            color: white;
+            margin-bottom: 0;
+            span {
+                color: $color-primary;
+            }
+        }
+    }
+    .promo__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include respond(phone) {
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+        a {
+            @include btn-button-click(rgba(255, 255, 255, .2), $color-primary);
+            color: white;
+            font-size: 14px;
+            padding: 15px 30px;
+        }
+    }
+}

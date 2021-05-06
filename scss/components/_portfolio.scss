@@ -1,0 +1,116 @@
+#portfolio {
+  .portfolio__filter {
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin: 0 15px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #a9a8a8;
+        font-size: 14px;
+        cursor: pointer;
+        @include respond(phone) {
+          margin: 10px 15px;
+        }
+      }
+      .mixitup-control-active {
+        color: $color-secondary;
+      }
+    }
+  }
+  .portfolio__gallery {
+    .mix {
+      .gallery__thumb {
+        position: relative;
+        margin: 1rem 0;
+        img {
+          width: 100%;
+        }
+        .img__hover {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          transition: all 0.3s;
+          border: 20px solid rgba(0, 0, 0, 0.1);
+          background-color: rgba(255, 255, 255, 0.9);
+          .hover__icon {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            transition: all 0.3s;
+            text-align: center;
+            opacity: 0;
+            a {
+              color: $color-secondary;
+              text-align: center;
+              i {
+                font-size: 35px;
+                @media (min-width: 900px) and (max-width: 1200px) {
+                  font-size: 25px;
+                }
+              }
+            }
+          }
+          .hover__content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 0 20px;
+            transition: all 0.3s;
+            opacity: 0;
+            text-align: center;
+            h4 {
+              margin-bottom: 0;
+              letter-spacing: 4px;
+              text-transform: uppercase;
+              font-size: 14px;
+              a {
+                color: $color-secondary;
+                transition: all 0.3s;
+                text-decoration: none;
+                &:hover {
+                  color: $color-primary;
+                }
+              }
+            }
+            p {
+              margin-bottom: 0;
+              font-size: 12px;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+              font-weight: normal;
+              a {
+                color: #757575;
+                transition: all 0.3s;
+                text-decoration: none;
+                &:hover {
+                  color: $color-primary;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          .img__hover {
+            opacity: 1;
+            .hover__icon {
+              top: 30%;
+              opacity: 1;
+              @media (min-width: 900px) and (max-width: 1200px) {
+                top: 15%;
+              }
+            }
+            .hover__content {
+              bottom: 20%;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
