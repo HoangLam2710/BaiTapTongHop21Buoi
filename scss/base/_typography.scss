@@ -13,12 +13,43 @@ body {
         width: 80%;
     }
 }
+
 .u-center-text {
     text-align: center;
 }
-.u-margin-buttom-30 {
+
+.u-margin-bottom-30 {
     margin-bottom: 3rem;
 }
+
 .u-padding-top-30 {
     padding-top: 3rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.page-content {
+    display: inline-block;
+    width: 100%;
+    padding: calc(100rem / 15) 0;
+}
+
+.bg-grey {
+    background-color: #f8f8f8;
+}
+
+.heading-title {
+    margin-bottom: calc(100rem / 15);
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
 }

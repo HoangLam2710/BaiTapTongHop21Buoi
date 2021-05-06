@@ -1,0 +1,52 @@
+footer {
+    .footer__logo {
+        img {
+            width: calc(100rem/15);
+        }
+    }
+    .sub-title {
+        margin: 1rem 0;
+        letter-spacing: 2px;
+        color: #222;
+        font-size: 12px;
+    }
+    .social-link.circle a {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #222;
+        border-radius: 50%;
+        line-height: 40px;
+    }
+    .social-link {
+        margin: calc(80rem/15) 0;
+        display: inline-block;
+        a {
+            display: inline-block;
+            margin: 10px;
+            color: #222;
+            font-size: 20px;
+            transition: all 0.5;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+    .copy-right {
+        h3 {
+            letter-spacing: 2px;
+            color: #000;
+            font-size: 14px;
+        }
+        h4 {
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+    }
+}
+
+footer.grey {
+    padding: 80px 0;
+    background: #f5f5f5;
+}

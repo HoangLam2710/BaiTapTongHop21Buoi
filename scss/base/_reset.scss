@@ -5,9 +5,11 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 html {
     font-size: 15px;
 }
+
 body {
     box-sizing: border-box;
 }
@@ -62,4 +64,16 @@ p {
     font-family: inherit;
     font-weight: 400;
     color: #7e7e7e;
+    font-size: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    transition: all 0.5s;
+    &:hover {
+        text-decoration: none;
+    }
 }

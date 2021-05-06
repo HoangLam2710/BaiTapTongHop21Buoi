@@ -1,0 +1,29 @@
+#img__post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .post__item {
+        width: 100%;
+        position: relative;
+        cursor: pointer;
+        .post__item__img img {
+            width: 100%;
+        }
+        .post__item__content {
+            position: absolute;
+            left: 0;
+            top: 10%;
+            padding: 10%;
+            .post__item__title {
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@include respond(tab-port) {
+    #img__post {
+        grid-template-columns: 1fr;
+    }
+}
