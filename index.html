@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/animate.css">
 
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <!-- my css -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -60,19 +63,19 @@
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#feature">Features</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" href="#blog">Blog</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Price Table</a>
+                    <a class="nav-link" href="#price__table">Price Table</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact__form">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -118,7 +121,7 @@
         <h3 class="heading-title">We love to design</h3>
         <p class="half-txt">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
         <div class="row about__list">
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow animate__fadeInLeftBig" data-wow-offset="10">
             <div class="about__item">
               <div class="about__item__icon">
                 <i class="fas fa-pencil-ruler"></i>
@@ -129,7 +132,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow animate__fadeInUpBig">
             <div class="about__item">
               <div class="about__item__icon">
                 <i class="fas fa-tablet-alt"></i>
@@ -140,7 +143,7 @@
               </div>    
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 wow animate__fadeInRightBig">
             <div class="about__item">
               <div class="about__item__icon">
                 <i class="fas fa-wine-glass-alt"></i>
@@ -197,7 +200,7 @@
         <h3 class="heading-title">Our Team</h3>
         <p class="half-txt">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
         <div class="row team__list u-margin-top-5">
-          <div class="col-lg-4 py-3">
+          <div class="col-lg-4 py-3 wow animate__fadeInLeftBig">
             <div class="team__item">
               <div class="team__item__img">
                 <img src="./images/team/team-1.jpeg" alt="">
@@ -219,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3">
+          <div class="col-lg-4 py-3 wow animate__fadeInUpBig">
             <div class="team__item">
               <div class="team__item__img">
                 <img src="./images/team/team-2.jpeg" alt="">
@@ -241,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 py-3">
+          <div class="col-lg-4 py-3 wow animate__fadeInRightBig">
             <div class="team__item">
               <div class="team__item__img">
                 <img src="./images/team/team-3.jpeg" alt="">
@@ -268,10 +271,188 @@
     </section>
 
     <!-- portfolio -->
-    <section id="portfolio"></section>
+    <section id="portfolio" class="u-margin-top-5">
+      <div class="container-fluid">
+        <h3 class="heading-title">Portfolio</h3>
+        <p class="half-txt">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes
+          nemo minima rerums unsers sadips amets.</p>
+        
+        <div class="portfolio__filter text-center mt-5">
+          <ul>
+            <li data-filter="all">All</li>
+            <li data-filter=".priting">Priting</li>
+            <li data-filter=".web">Web</li>
+            <li data-filter=".illustration">Illustration</li>
+            <li data-filter=".media">Media</li>
+            <li data-filter=".crafts">Crafts</li>
+          </ul>
+        </div>
+
+        <div class="portfolio__gallery">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mix priting illustration" data-order="1">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-1.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-1.jpeg" title="Title 1">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-1.jpeg" title="Title 1">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix web media" data-order="2">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-2.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-2.jpeg" title="Title 2">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-2.jpeg" title="Title 2">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix illustration crafts" data-order="3">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-3.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-3.jpeg" title="Title 3">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-3.jpeg" title="Title 3">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix priting media" data-order="4">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-4.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-4.jpeg" title="Title 4">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-4.jpeg" title="Title 4">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix web media" data-order="5">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-5.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-5.jpeg" title="Title 5">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-5.jpeg" title="Title 5">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix priting illustration media crafts" data-order="6">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-6.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-6.jpeg" title="Title 6">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-6.jpeg" title="Title 6">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix web crafts" data-order="7">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-7.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-7.jpeg" title="Title 7">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-7.jpeg" title="Title 7">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mix web crafts" data-order="8">
+              <div class="gallery__thumb">
+                <img src="./images/portfolio/p-8.jpeg" alt="">
+                <div class="img__hover">
+                  <div class="hover__icon">
+                    <a data-fancybox="gallery" href="./images/portfolio/p-8.jpeg" title="Title 8">
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </div>
+                  <div class="hover__content">
+                    <h4>
+                      <a data-fancybox="gallery" href="./images/portfolio/p-8.jpeg" title="Title 8">lightbox view</a>
+                    </h4>
+                    <p><a href="#">category</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- promo -->
-    <section id="promo"></section>
+    <section id="promo" class="u-padding-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 promo__info text-white">
+            <span>Are you impressed with our creative work? </span>
+            <h3>start <span>building your project</span> with massive</h3>
+          </div>
+          <div class="col-md-4 promo__btn">
+            <a href="#">purchase now</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- services -->
     <section id="services"></section>
@@ -315,6 +496,11 @@
     <!-- footer -->
     <footer></footer>
 
+    
+    <a href="#home" class="back-to-top back-to-top__hide">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -338,6 +524,24 @@
     <script>
       new WOW().init();
     </script>
+
+    <!-- mixitup -->
+    <script src="./js/mixitup.min.js"></script>
+    <script>
+      var mixer = mixitup('.portfolio__gallery');
+      var mixer = mixitup(containerEl);
+      var mixer = mixitup(containerEl, {
+          selectors: {
+              target: '.blog-item'
+          },
+          animation: {
+              duration: 300
+          }
+      });
+    </script>
+
+    <!-- fancybox js -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <!-- my js -->
     <script src="./js/main.js"></script>
