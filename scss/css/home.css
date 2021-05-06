@@ -3,4 +3,28 @@
   width: 100%;
   padding: 100px 0;
 }
-/*# sourceMappingURL=home.css.map */
+
+.parallax-slider {
+  background-image: url(../../images/parallax-slider/14.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.fun-factor {
+  background-image: url(../../images/parallax-slider/7.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonial {
+  background-image: url(../../images/parallax-slider/19.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

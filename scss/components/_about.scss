@@ -1,0 +1,40 @@
+#about {
+  .about__list {
+    margin-top: 5rem;
+    .about__item {
+      position: relative;
+      border: 1px solid #e9e9e9;
+      padding: 2rem 2rem 1rem;
+      border-radius: 5px;
+      @include respond(tab-port) {
+        margin-bottom: 50px;
+      }
+      .about__item__icon {
+        position: absolute;
+        top: -17%;
+        box-shadow: 0 0 0 10px #fff;
+        i {
+          width: 60px;
+          height: 60px;
+          background-color: $color-secondary;
+          text-align: center;
+          line-height: 60px;
+          border-radius: 5px;
+          color: white;
+          font-size: 30px;
+          transition: 0.5s all;
+        }
+      }
+      .about__item__content {
+        margin-top: 20px;
+      }
+      &:hover {
+        .about__item__icon {
+          i {
+            background-color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+}

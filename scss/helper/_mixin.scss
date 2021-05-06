@@ -1,14 +1,12 @@
-@mixin btn-button-click($bg, $bg-1) {
+@mixin btn-button-click($bg, $color) {
     padding: 0.6rem 2rem;
     font-size: 1.5rem;
     background: $bg;
     border: none;
+    border-radius: 4px;
     text-transform: uppercase;
     transition: all 0.5s;
-    &:hover {
-        background: $bg-1;
-        border: none;
-    }
+    color: $color;
 }
 
 @mixin respond($breakpoint) {
@@ -30,6 +28,17 @@
     @if ($breakpoint == big-desktop) {
         @media (min-width: 1800px) {
             @content;
+        }
+    }
+}
+
+@mixin progress-bar($number) {
+    &.progress__bar--#{$number}.active {
+        &::after {
+            width: $number * 1%;
+        }
+        .progress__bar--counter {
+            left: $number * 1% - 5%;
         }
     }
 }

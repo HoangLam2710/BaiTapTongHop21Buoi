@@ -1,0 +1,89 @@
+#skills {
+    background: {
+        image: url("./../../images/background/bg-1.jpeg");
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+        attachment: fixed;
+    };
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    .heading-title {
+        letter-spacing: 6px;
+        @include respond(tab-port) {
+            margin: 6rem 0;
+        }
+    }
+    .skills__progress {
+        .progress__bar {
+            width: 100%;
+            height: 20px;
+            margin: 50px 0;
+            position: relative;
+            background: #606060;
+            
+            &::after {
+              content: "";
+              position: absolute;
+              width: 0;
+              height: 100%;
+              background: #f2f2f2;
+              top: 0;
+              left: 0;
+              transition: 1s ease;
+            }
+
+            .progress__bar--content {
+                position: absolute;
+              font-size: .8rem;
+              top: 5%;
+              left: 2%;
+              z-index: 3;
+            }
+            
+            .progress__bar--counter {
+                position: absolute;
+                top: -28px;
+                left: 0%;
+                min-width: 25px;
+                height: 20px;
+                padding: 0 8px;
+                border-radius: 30px;
+                line-height: 20px;
+                color: $color-secondary;
+                background-color: #a4a4a4;
+                transition: 1s ease;
+
+                &::before {
+                    position: absolute;
+                    bottom: -2px;
+                    left: 19px;
+                    display: block;
+                    width: 5px;
+                    height: 5px;
+                    content: "";
+                    transform: rotate(45deg);
+                    border-color: #a4a4a4;
+                    border-right: 1px solid #a4a4a4;
+                    background-color: #a4a4a4;
+                }
+            }
+            
+            // Code dưới tìm cách ghi gọn lại
+            @include progress-bar(75);
+            @include progress-bar(80);
+            @include progress-bar(90);
+
+        }
+    }
+}

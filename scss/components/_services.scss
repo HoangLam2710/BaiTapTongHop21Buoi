@@ -1,0 +1,33 @@
+.service-box {
+    border: 1px solid $color-gray-1;
+    padding: 50px;
+    transition: all 0.5s;
+    @include respond(tab-port) {
+        padding: 30px;
+    }
+    &__icon {
+        font-size: 46px;
+        color: $color-content;
+        display: block;
+    }
+    &:hover {
+        background: $color-secondary;
+        h4 {
+            color: $color-white;
+        }
+        i {
+            color: $color-primary;
+        }
+    }
+}
+
+#services {
+    .col-md-12 {
+        padding-left: 0;
+        padding-right: 0;
+        @include respond(phone) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
