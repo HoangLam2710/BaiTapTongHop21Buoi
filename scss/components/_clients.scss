@@ -8,12 +8,11 @@
             height: auto;
         }
     }
-}
+    .owl-theme .owl-dots .owl-dot span {
+        background: #eaeaea !important;
+    }
 
-.owl-theme .owl-dots .owl-dot span {
-    background: #eaeaea !important;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-    opacity: 0.5;
+    .owl-theme .owl-dots .owl-dot.active span {
+        opacity: 0.5;
+    }
 }
