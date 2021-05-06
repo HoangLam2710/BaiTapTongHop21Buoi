@@ -1,0 +1,58 @@
+#carousel {
+    @include respond(tab-port) {
+        margin-top: 9%;
+    }
+    @include respond(phone) {
+        margin-top: 18%;
+    }
+    .carousel__slide {
+        position: relative;
+        .carousel__item {
+            img {
+                width: 100%;
+                height: 100vh;
+                @include respond(tab-land) {
+                    height: 40vh;
+                }
+                @include respond(phone) {
+                    height: 50vh;
+                }
+            }
+            .carousel__content {
+                position: absolute;
+                top: 40%;
+                left: 12%;
+                @include respond(phone) {
+                    left: 5%;
+                    right: 5%;
+                }
+                h1 {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            bottom: 5%;
+            left: 48%;
+            button.owl-dot {
+                width: 10px;
+                height: 10px;
+                margin: 2px;
+                background-color: rgba(0,0,0,0);
+                border: 1px solid #fff;
+                border-radius: 10px;
+                outline: none;
+            }
+            button.owl-dot.active {
+                background-color: white;
+            }
+        }
+    }
+    
+}

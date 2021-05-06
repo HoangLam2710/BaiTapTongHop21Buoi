@@ -29,19 +29,243 @@
   </head>
   <body>
     <!-- header -->
-    <header></header>
+    <header id="home">
+      <div class="header-sticky">
+        <div class="navbar-light-trans">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light">
+              <!-- Brand -->
+              <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="">
+              </a>
+            
+              <!-- Toggler/collapsibe Button -->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Price Table</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- carousel -->
-    <section id="carousel"></section>
+    <section id="carousel">
+      <div class="owl-carousel carousel__slide">
+        <div class="carousel__item">
+          <img src="./images/carousel/bs1.jpeg" alt="">
+          <div class="carousel__content">
+            <h1><span>Hi There!</span><br> We are massive</h1>
+            <p>Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi erat,
+              <br>ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img src="./images/carousel/bs2.jpeg" alt="">
+          <div class="carousel__content">
+            <h1><span> We've Lots of !</span><br> Reusable Components</h1>
+            <p>Vulputate nulla. Quisque lacinia nisi erat,<br>
+              ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+          </div>
+        </div>
+        <div class="carousel__item">
+          <img src="./images/carousel/bs3.jpeg" alt="">
+          <div class="carousel__content">
+            <h1 class="text-white"><span> Why Choose massive ? </span><br> unlimited possibilities </h1>
+            <p class="text-white">Integer nec nulla bibendum, venenatis elit vel, vulputate nulla. Quisque lacinia nisi erat,
+              <br>ut scelerisque augue pharetra et. Aliquam efficitur lacus eget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- about -->
-    <section id="about"></section>
+    <section id="about" class="u-margin-5">
+      <div class="container">
+        <h3 class="heading-title">We love to design</h3>
+        <p class="half-txt">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
+        <div class="row about__list">
+          <div class="col-lg-4">
+            <div class="about__item">
+              <div class="about__item__icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <div class="about__item__content">
+                <h4>MODERN DESIGN</h4>
+                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="about__item">
+              <div class="about__item__icon">
+                <i class="fas fa-tablet-alt"></i>
+              </div>
+              <div class="about__item__content">
+                <h4>BOOTSTRAP</h4>
+                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+              </div>    
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="about__item">
+              <div class="about__item__icon">
+                <i class="fas fa-wine-glass-alt"></i>
+              </div>
+              <div class="about__item__content">
+                <h4>CLEAN CODE</h4>
+                <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- skills -->
-    <section id="skills"></section>
+    <section id="skills" class="u-padding-5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <h3 class="heading-title text-white">SKILLS AND EXPERIENCE</h3>
+          </div>
+          <div class="col-lg-6 p-5">
+            <h4 class="text-white">WE ARE DAMN EXPART !</h4>
+            <p class="text-white pt-4">We are a team of multi-skilled and curious digital specialists who are always up for a massive challenge forever. We are a team of multi-skilled and curious digital specialists who are always up for a massive challenge forever.</p>
+            <div class="skills__progress mt-5">
+              <div class="progress__bar progress__bar--80">
+                <div class="progress__bar--content">
+                  HTML / CSS / JQUERY
+                </div>
+                <div class="progress__bar--counter">80%</div>
+              </div>
+              <div class="progress__bar progress__bar--90">
+                <div class="progress__bar--content">
+                  PHOTOSHOP
+                </div>
+                <div class="progress__bar--counter">90%</div>
+              </div>
+              <div class="progress__bar progress__bar--75">
+                <div class="progress__bar--content">
+                  GRAPHIC DESIGN
+                </div>
+                <div class="progress__bar--counter">75%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- team -->
-    <section id="team"></section>
+    <section id="team" class="u-padding-5">
+      <div class="container">
+        <h3 class="heading-title">Our Team</h3>
+        <p class="half-txt">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore</p>
+        <div class="row team__list u-margin-top-5">
+          <div class="col-lg-4 py-3">
+            <div class="team__item">
+              <div class="team__item__img">
+                <img src="./images/team/team-1.jpeg" alt="">
+                <div class="img__info">
+                  <h5>Martin Smith</h5>
+                  <span>Founder & Ceo</span>
+                </div>
+              </div>
+              <div class="team__item__hover">
+                <div class="hover__content">
+                  <h4>I love to design</h4>
+                  <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+                </div>
+                <div class="hover__link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="team__item">
+              <div class="team__item__img">
+                <img src="./images/team/team-2.jpeg" alt="">
+                <div class="img__info">
+                  <h5>Franklin Harbet</h5>
+                  <span>HR Manager</span>
+                </div>
+              </div>
+              <div class="team__item__hover">
+                <div class="hover__content">
+                  <h4>Hello There..</h4>
+                  <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+                </div>
+                <div class="hover__link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 py-3">
+            <div class="team__item">
+              <div class="team__item__img">
+                <img src="./images/team/team-3.jpeg" alt="">
+                <div class="img__info">
+                  <h5>Linda Anderson</h5>
+                  <span>Marketing Manager</span>
+                </div>
+              </div>
+              <div class="team__item__hover">
+                <div class="hover__content">
+                  <h4>Its awesome</h4>
+                  <p>We are a team of multi-skilled and curious digital specialists who are always up for a challenge and learning as fast as digital is changing.</p>
+                </div>
+                <div class="hover__link">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- portfolio -->
     <section id="portfolio"></section>
@@ -99,6 +323,15 @@
 
     <!-- owl carousel -->
     <script src="./lib/owl-carousel/dist/owl.carousel.min.js"></script>
+    <script>
+      $('.carousel__slide').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          dots: true,
+          items:1
+      })
+    </script>
 
     <!-- wow -->
     <script src="./js/wow.min.js"></script>

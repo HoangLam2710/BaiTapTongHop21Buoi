@@ -33,3 +33,14 @@
         }
     }
 }
+
+@mixin progress-bar($number) {
+    &.progress__bar--#{$number}.active {
+        &::after {
+          width: $number * 1%;
+        }
+        .progress__bar--counter {
+          left: $number * 1% - 5%;
+        } 
+    }
+}
