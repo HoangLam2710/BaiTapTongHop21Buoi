@@ -47,28 +47,42 @@
 }
 
 .text-uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
-
+.u-margin-buttom-30 {
+  margin-bottom: 30px;
+}
+.u-padding-b-30 {
+  padding-bottom: 30px;
+}
+.u-margin-buttom-50 {
+  margin-bottom: 50px;
+}
 .page-content {
-    display: inline-block;
-    width: 100%;
-    padding: calc(100rem / 15) 0;
+  display: inline-block;
+  width: 100%;
+  padding: calc(100rem / 15) 0;
 }
-
+.u-margin-buttom-100 {
+  margin-bottom: 100px;
+}
+.u-padding-tb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .bg-grey {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
 
 .heading-title {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-bottom: 0;
-        letter-spacing: 2px;
-        font-weight: normal;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
 }
