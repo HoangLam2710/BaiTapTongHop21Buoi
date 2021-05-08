@@ -2,6 +2,24 @@
     margin-left: calc(100% /6);
 }
 
+@include respond(tab-port) {
+    .subcribe-box .subcribe__content {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width :768px) {
+    .subcribe-box .subcribe__form {
+        .form-control,
+        button {
+            width: 100% !important;
+        }
+        .form-control {
+            margin: 1rem 0 !important;
+        }
+    }
+}
+
 .subcribe-box {
     .subcribe__info {
         margin-bottom: calc(50rem/15);
@@ -21,7 +39,7 @@
             display: inline-block;
             float: none;
             margin: 0 5px;
-            width: 75% !important;
+            width: 75%;
             height: 52px;
             border: 1px solid #fff;
             background: #fff;

@@ -27,3 +27,11 @@
         grid-template-columns: 1fr;
     }
 }
+
+@include respond(phone) {
+    #img__post .post__item .post__item__content p {
+        height: 4rem;
+        overflow: scroll;
+        text-overflow: ellipsis;
+    }
+}
