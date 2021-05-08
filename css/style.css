@@ -1378,6 +1378,14 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   }
 }
 
+@media (max-width: 600px) {
+  #img__post .post__item .post__item__content p {
+    height: 4rem;
+    overflow: scroll;
+    text-overflow: ellipsis;
+  }
+}
+
 #price__table .price__col {
   padding: calc(10rem /3);
   text-align: center;
@@ -1474,6 +1482,22 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   margin-left: calc(100% /6);
 }
 
+@media (max-width: 900px) {
+  .subcribe-box .subcribe__content {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .subcribe-box .subcribe__form .form-control,
+  .subcribe-box .subcribe__form button {
+    width: 100% !important;
+  }
+  .subcribe-box .subcribe__form .form-control {
+    margin: 1rem 0 !important;
+  }
+}
+
 .subcribe-box .subcribe__info {
   margin-bottom: calc(50rem/15);
 }
@@ -1494,7 +1518,7 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   display: inline-block;
   float: none;
   margin: 0 5px;
-  width: 75% !important;
+  width: 75%;
   height: 52px;
   border: 1px solid #fff;
   background: #fff;
@@ -1543,6 +1567,10 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 
 #clients .owl-theme .owl-dots .owl-dot.active span {
   opacity: 0.5;
+}
+
+#clients .client__title {
+  margin-bottom: calc(100rem/15);
 }
 
 .paralax-inner {
@@ -1615,6 +1643,12 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   padding: 2rem/3 4rem/3;
   font-size: 12px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #contact__form #form .form__content {
+    width: 100% !important;
+  }
 }
 
 footer .footer__logo img {

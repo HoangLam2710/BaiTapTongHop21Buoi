@@ -11,8 +11,10 @@
     .owl-theme .owl-dots .owl-dot span {
         background: #eaeaea !important;
     }
-
     .owl-theme .owl-dots .owl-dot.active span {
         opacity: 0.5;
+    }
+    .client__title {
+        margin-bottom: calc(100rem/15);
     }
 }

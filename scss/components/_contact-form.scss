@@ -38,3 +38,9 @@
     font-size: 12px;
     font-weight: normal;
 }
+
+@media screen and (max-width:768px) {
+    #contact__form #form .form__content {
+        width: 100% !important;
+    }
+}
