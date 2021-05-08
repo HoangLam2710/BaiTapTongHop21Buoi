@@ -77,6 +77,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
@@ -201,10 +202,31 @@ a:hover {
   text-transform: uppercase;
 }
 
+.u-margin-buttom-30 {
+  margin-bottom: 30px;
+}
+
+.u-padding-b-30 {
+  padding-bottom: 30px;
+}
+
+.u-margin-buttom-50 {
+  margin-bottom: 50px;
+}
+
 .page-content {
   display: inline-block;
   width: 100%;
   padding: calc(100rem / 15) 0;
+}
+
+.u-margin-buttom-100 {
+  margin-bottom: 100px;
+}
+
+.u-padding-tb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .bg-grey {
@@ -882,8 +904,6 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 }
 
 #promo .promo__btn a {
-  padding: 0.6rem 2rem;
-  font-size: 1.5rem;
   background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 4px;
@@ -953,6 +973,7 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   position: absolute;
   bottom: 0;
   left: 0;
+  margin-left: 20px;
 }
 
 .slider-content__text {
@@ -983,88 +1004,26 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 }
 
 .slider-content__text button {
-  padding: 5px 15px;
-  font-size: 13px;
   background: rgba(255, 255, 255, 0.2);
   border: none;
+  border-radius: 4px;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.slider-content__text button:hover {
-  background: #d6b161;
-  border: none;
-}
-
-.slider-content .owl-dots {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-@media (max-width: 600px) {
-  .slider-container .col-4 {
-    display: none;
-  }
-}
-
-.slider-content__img {
-  height: 550px;
-}
-
-@media (max-width: 900px) {
-  .slider-content__img {
-    height: 350px;
-  }
-}
-
-.slider-content__img img {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.slider-content__text {
-  padding-top: 200px;
-  padding-left: 70px;
-}
-
-@media (max-width: 900px) {
-  .slider-content__text {
-    padding-top: 109px;
-    padding-left: 44px;
-  }
-}
-
-@media (max-width: 600px) {
-  .slider-content__text {
-    padding: 50px 35px;
-    text-align: center;
-  }
-}
-
-.slider-content__text h3 {
-  color: #d6b161;
-}
-
-.slider-content__text p {
   color: #ffffff;
-}
-
-.slider-content__text button {
-  padding: 5px 15px;
+  padding: 13px 30px;
   font-size: 13px;
-  background: rgba(255, 255, 255, 0.2);
-  border: none;
-  text-transform: uppercase;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .slider-content__text button:hover {
   background: #d6b161;
   border: none;
+}
+
+@media (max-width: 900px) {
+  .slider-content__text .btn-danger {
+    margin-bottom: 20px;
+  }
 }
 
 .slider-content .owl-dots {
@@ -1091,8 +1050,6 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 }
 
 .content__buttom--orange {
-  padding: 0.6rem 2rem;
-  font-size: 1.5rem;
   background: #222;
   border: none;
   border-radius: 4px;
@@ -1110,8 +1067,6 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 }
 
 .content__buttom--white {
-  padding: 0.6rem 2rem;
-  font-size: 1.5rem;
   background: #ffffff;
   border: none;
   border-radius: 4px;
@@ -1126,31 +1081,6 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
 .content__buttom--white:hover {
   color: #ffffff;
   background: #222;
-}
-
-#feature .row {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-#feature .row .col-md-6 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-button {
-  font-size: 15px;
-}
-
-.content__photo img {
-  width: 100%;
-}
-
-.content__desc--number {
-  display: inline-block;
-  width: 100%;
-  font-size: 4rem;
-  color: #e1e1e1;
 }
 
 #feature .row {
@@ -1258,10 +1188,44 @@ button {
   background-color: #ffffff;
 }
 
-.content-box {
+.blog-content__view .half-txt {
+  margin-top: 40px;
+}
+
+.blog-content__view a {
   position: relative;
+  color: #7e7e7e;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.blog-content__view a:hover {
+  color: #222;
+}
+
+.blog-content__view a i {
+  position: absolute;
+  top: 9px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.content-box {
   padding: 40px;
   height: 301px;
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .content-box {
+    height: 255px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .content-box {
+    height: 190px;
+  }
 }
 
 .content-box__text {
@@ -1367,6 +1331,10 @@ button {
 .testimonial-item__content--name p {
   color: #ffffff;
   margin-bottom: 0;
+}
+
+.testimonial .half-txt {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 600px) {
