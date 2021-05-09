@@ -1098,7 +1098,7 @@
     <section id="contact__info" class="paralax-inner paralax-15 ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-12  mb-md-5 mb-sm-3">
+                <div class="col-lg-4 col-md-12 mb-5">
                     <div class="info__item text-center">
                         <div class="icon text-white wow animate__bounceInDown ">
                             <i class="fas fa-map-marked-alt"></i>
@@ -1112,7 +1112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 mb-md-5 mb-sm-3">
+                <div class="col-lg-4 col-md-12 mb-5">
                     <div class="info__item text-center">
                         <div class="icon text-white wow animate__bounceInDown">
                             <i class="fas fa-mobile-alt"></i>
@@ -1126,7 +1126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12  mb-md-5 mb-sm-3">
+                <div class="col-lg-4 col-md-12 mb-5">
                     <div class="info__item text-center">
                         <div class="icon text-white wow animate__bounceInDown">
                             <i class="fas fa-envelope-open-text"></i>
@@ -1271,23 +1271,23 @@
                 },
             },
         });
-        $('.owl-carousel.clnt-slide').owlCarousel({
+        $('.clnt-slide').owlCarousel({
             loop: true,
             margin: 10,
-            responsiveClass: true,
-            autoplay: 1000,
+            nav: false,
+            dots: true,
             responsive: {
+                0: {
+                    items: 1,
+                },
                 600: {
-                    items: 2,
-                    nav: false
+                    items: 2
                 },
                 768: {
-                    items: 3,
-                    nav: false
+                    items: 3
                 },
                 1000: {
                     items: 6,
-                    nav: false,
                     loop: false
                 }
             }

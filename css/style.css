@@ -914,6 +914,12 @@ header .isScrolling .navbar-light-trans .navbar .navbar-brand img {
   color: white;
   font-size: 14px;
   padding: 15px 30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#promo .promo__btn a:hover {
+  background-color: #d6b161;
 }
 
 .service-box {
@@ -1753,4 +1759,3 @@ footer.grey {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
-/*# sourceMappingURL=style.css.map */
