@@ -36,5 +36,11 @@ window.onscroll = function (event) {
     backToTop.classList.remove('isVisible');
   }
 
-  document.querySelector('home').scrollIntoView({ behavior: 'smooth' });
+  window.onload = function() {
+    document.querySelector(".back-to-top").click = function() {
+      document.querySelector('body,html').animate({
+        scrollTop: 0
+      })
+    }
+  }
 }
